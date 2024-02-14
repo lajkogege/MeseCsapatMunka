@@ -1,59 +1,56 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-header{
-    flex: 0 0 100%;
-    flex-wrap: wrap;
+header {
+  flex: 0 0 100%;
+  flex-wrap: wrap;
 }
-nav{
-    height: 40px;
-    border:1px solid red;
-    background-color: rgba(224, 131, 9, 0.63);
-    width: 100%;
-    box-shadow: 5px 5px 5px #aaaaaa;
-    position: sticky;
-    top: 0;
-}
-
-nav ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-}
-nav ul li{
-    border-right: 1px solid red;
-    padding: 4px;
+nav {
+  height: 40px;
+  background-color: rgb(224, 131, 9);
+  width: 100%;
+  box-shadow: 5px 5px 5px hsla(0, 2%, 10%, 0.395);
+  position: sticky;
+  top: 0;
 }
 
-nav a{
-    text-decoration: none;
-    color:white;
-    height: 100%;
-    padding: 19px;
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+nav ul li {
+  border-right: 1px solid red;
+  padding: 4px;
 }
 
-nav a:hover{
-    color:yellow;
+nav a {
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  padding: 19px;
 }
 
-article{
-    flex: 0 0 100%;
-}
-article img{
-    width: 300px;
+nav a:hover {
+  color: yellow;
 }
 
-footer{
-    flex: 0 0 100%;
+article {
+  flex: 0 0 100%;
+}
+article img {
+  width: 300px;
 }
 
-
+footer {
+  flex: 0 0 100%;
+}
