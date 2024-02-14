@@ -13,6 +13,8 @@ main{
 header{
     flex: 0 0 100%;
     flex-wrap: wrap;
+    background-image: url('');
+    max-width: 100;
 }
 
 
@@ -20,6 +22,7 @@ nav{
     height: 40px;
     border:1px solid red;
     background-color: rgba(224, 131, 9, 0.63);
+    width: 100%;
 }
 
 nav ul{
@@ -27,6 +30,10 @@ nav ul{
     display: flex;
     flex-direction: row;
     height: 100%;
+}
+
+nav li{
+    padding-top: 10px;
 }
 
 nav a{
