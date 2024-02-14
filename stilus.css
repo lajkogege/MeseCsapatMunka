@@ -33,17 +33,26 @@ nav ul {
 nav ul li {
   border-right: 1px solid red;
   padding: 4px;
+  align-self: center;
 }
 
 nav a {
   text-decoration: none;
   color: white;
   height: 100%;
-  padding: 19px;
+  padding: 18px;
 }
 
 nav a:hover {
   color: yellow;
+}
+
+nav ul:first-child{
+    margin-right: auto;
+}
+
+#nav-kep img{
+    width: 20px;
 }
 
 article {
