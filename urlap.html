@@ -13,7 +13,6 @@
 <body>
     <main>
         <header>
-            Pókember képregény
         </header>
         <nav>
             <ul>
@@ -21,31 +20,45 @@
                 <li><a href="urlap.html">Kérdőív</a></li>
             </ul>
         </nav>
-        <article>
-            <h1>Mondd el a véleményedet a képregényről</h1>
+        <div id="tarolo">
+            
             <form action="/action_page.php">
+                <h2>Mondd el a véleményedet a képregényről</h2>
                 <fieldset class="elso">
-                    <legend>Adataid:</legend>
+                    <legend>Adataok:</legend>
                     <label for="fname">Vezeték név<sup>*<sup></label>
                     <input type="text" id="fname" name="fname" placeholder="Példa János"><br><br>
                     <label for="fname">Keresztnév név<sup>*<sup></label>
                     <input type="text" id="fname" name="fname" placeholder="Példa János"><br><br>
-                  </fieldset>
+                    <label for="email">E-mail cím:</label>
+                    <input type="email" id="email" name="email" placeholder="peldajanos@gmail.com">
+                
+                </fieldset>
             </form>
 
             <form>
                 <fieldset class="elso">
-                <legend>Vélemény</legend>
+                <legend>1.kérdés</legend>
                 <p>Az alábbiak közül mi tetszett benne a legjobban?</p>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <input type="checkbox" class="vehicle" name="vehicle1" value="Bike">
                 <label for="vehicle1"> Ötletes</label><br>
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <input type="checkbox" class="vehicle" name="vehicle2" value="Car">
                 <label for="vehicle2"> Mesebeli</label><br>
-                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <input type="checkbox" class="vehicle" name="vehicle3" value="Boat">
                 <label for="vehicle3"> Fantázia dús</label>
             </fieldset>
               </form> 
-        </article>
+
+              <form >
+                <fieldset class="elso">
+                    <legend>2.kérédés</legend>
+                    <p>Fejsd ki gondolataidat!</p>
+                    <textarea name="message" rows="10" cols="30" placeholder="Nekem a legjobban...">
+                        
+                    </textarea> 
+                </fieldset>
+              </form>
+        </div>
         
     </main>
 </body>
