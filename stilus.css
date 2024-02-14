@@ -9,17 +9,16 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
 }
-
 header{
     flex: 0 0 100%;
     flex-wrap: wrap;
 }
-
-
 nav{
     height: 40px;
     border:1px solid red;
     background-color: rgba(224, 131, 9, 0.63);
+    width: 100%;
+    box-shadow: 5px 5px 5px #aaaaaa;
 }
 
 nav ul{
@@ -28,10 +27,14 @@ nav ul{
     flex-direction: row;
     height: 100%;
 }
+nav ul li{
+    border-right: 1px solid red;
+    padding: 4px;
+}
 
 nav a{
+    text-decoration: none;
     color:white;
-    border:1px solid red;
     height: 100%;
     padding: 19px;
 }
