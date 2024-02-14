@@ -22,12 +22,28 @@
             </ul>
         </nav>
         <article>
+            <h1>Mondd el a véleményedet a képregényről</h1>
             <form action="/action_page.php">
-                <label for="fname">Vezeték név:</label><br>
-                <input type="text" id="fname" name="fname" value="John"><br>
-                <label for="lname">Kereszt név:</label><br>
-                <input type="text" id="lname" name="lname" value="Doe"><br><br>
-                <input type="submit" value="Submit">
+                <fieldset class="elso">
+                    <legend>Adataid:</legend>
+                    <label for="fname">Vezeték név<sup>*<sup></label>
+                    <input type="text" id="fname" name="fname" placeholder="Példa János"><br><br>
+                    <label for="fname">Keresztnév név<sup>*<sup></label>
+                    <input type="text" id="fname" name="fname" placeholder="Példa János"><br><br>
+                  </fieldset>
+            </form>
+
+            <form>
+                <fieldset class="elso">
+                <legend>Vélemény</legend>
+                <p>Az alábbiak közül mi tetszett benne a legjobban?</p>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Ötletes</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Mesebeli</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> Fantázia dús</label>
+            </fieldset>
               </form> 
         </article>
         
