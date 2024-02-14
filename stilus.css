@@ -15,12 +15,30 @@ header{
     flex-wrap: wrap;
 }
 
-nav
+nav{
+    height: 40px;
+    border:1px solid red;
+    background-color: rgba(224, 131, 9, 0.63);
+}
 
 nav ul{
+    list-style-type: none;
     display: flex;
     flex-direction: row;
-    gap:10px;
+    height: 100%;
+}
+
+
+
+nav a{
+    color:white;
+    border:1px solid red;
+    height: 100%;
+    padding: 19px;
+}
+
+nav a:hover{
+    color:yellow;
 }
 
 
