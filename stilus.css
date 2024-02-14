@@ -5,14 +5,15 @@
 }
 
 main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  background-color: red;
 }
+
 header {
-  flex: 0 0 100%;
-  flex-wrap: wrap;
+  background-image: url(mese_kepek/banner.jpg);
+  height: 240px;
+  background-position: 0px 470px;
 }
+
 nav {
   height: 40px;
   background-color: rgb(224, 131, 9);
@@ -45,11 +46,17 @@ nav a:hover {
   color: yellow;
 }
 
-
 article {
-  flex: 0 0 100%;
+  background-color: darkred;
+  margin: auto;
+  width: 70%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
 }
+
 article img {
+  border: 5px solid white;
   width: 300px;
 }
 
@@ -62,10 +69,22 @@ footer {
 form{
     border:3px solid red;
     padding: 10px;
-    width: 80%;
     margin: auto;
     margin-bottom: 20px;
+    max-width: 50%;
 }
+
+form h2{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+fieldset{
+    padding: 10px;
+    color: white;
+}
+
 
 legend{
     border:1px solid red; 
@@ -76,4 +95,9 @@ legend{
 
 form p{
     padding: 5px;
+}
+@media (max-width: 600px) {
+  header {
+    display: none;
+  }
 }
