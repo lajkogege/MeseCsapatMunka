@@ -23,6 +23,7 @@ nav {
 }
 
 nav ul {
+  justify-content: flex-end;
   list-style-type: none;
   display: flex;
   flex-direction: row;
