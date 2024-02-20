@@ -16,7 +16,6 @@ header {
 }
 
 nav {
-  height: 40px;
   background-color: rgb(224, 131, 9);
   width: 100%;
   box-shadow: 5px 5px 5px hsla(0, 2%, 10%, 0.395);
@@ -32,9 +31,10 @@ nav ul {
   height: 100%;
 }
 nav ul li {
+  display: flex;
+  align-items: center;
+  height: 40px;
   border-right: 1px solid red;
-  padding: 4px;
-  align-self: center;
 }
 
 nav a {
@@ -42,18 +42,21 @@ nav a {
   color: white;
   height: 100%;
   padding: 18px;
+  padding-top: 10px;
 }
 
 nav a:hover {
   color: yellow;
 }
 
-nav ul:first-child{
-    margin-right: auto;
+nav li:first-child {
+  border: none;
+  margin-right: auto;
+  padding-left: 10px;
 }
 
-#nav-kep img{
-    width: 20px;
+#nav-kep img {
+  width: 20px;
 }
 
 article {
@@ -75,6 +78,11 @@ footer {
 }
 
 
+article{
+  padding-top:20px;
+}
+
+
 
 /*Űrlap*/
 fieldset {
@@ -86,9 +94,7 @@ fieldset {
   padding-left: 0.75em;
   padding-right: 0.75em;
   border: 2px groove (internal value);
-
   background-color: rgb(246, 232, 198);
-
   width: 90%;
   margin: auto;
 }
@@ -104,11 +110,13 @@ main{
   border: 1px solid;
   padding: 10px;
   box-shadow: 5px 10px #888888;
+  background-color: rgb(246, 232, 198);
 }
 
 .elso label{
   float:left;
   width: 50%;
+  color:black;
 }
 
 .elso sup{
@@ -144,15 +152,56 @@ main{
   margin-bottom: 30px;
 }
 
+form{
+    padding-top:10px;
+    padding-bottom: 10px;
+  }
+
+
+
+form h2 {
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+fieldset {
+  padding: 10px;
+  color: white;
+}
+
+legend {
+  border: 1px solid red;
+  width: 70px;
+  background-color: orange;
+  color: white;
+}
+
+form p {
+  padding: 5px;
+
+}
+
 .cim{
   font-style: italic;
   padding-bottom: 5px;
+  color: black;
 }
 
 /*Media*/
 
 @media (max-width: 600px) {
   header {
+    display: none;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    border: none;
+  }
+  nav ul li:first-child {
     display: none;
   }
 }
